@@ -31,6 +31,21 @@ namespace ToolsQA.Selenium_Basics
             //   driver.FindElement(By.XPath("(//*[contains(text(),'Livraison gratuite')])[1]")).Click();
             Thread.Sleep(100);
             driver.FindElement(By.XPath("(//*[contains(text(),'Call of Duty: Modern Warfare - Edition Exclusive Amazon (PS4)')])[1]")).Click();
+            Thread.Sleep(1000);
+
+            driver.FindElement(By.XPath("(//*[contains(@title,'Ajouter au panier')])[1]")).Click();
+           
+             Thread.Sleep(1000);
+             driver.FindElement(By.XPath("(//*[contains(text(),'Passer la commande (1 article)')])[1]")).Click();
+
+            Thread.Sleep(1000);
+
+            driver.FindElement(By.XPath("(//*[contains(@name,'email')])[1]")).SendKeys("mohammedkoulal@yahoo.fr");
+            Thread.Sleep(1000);
+
+            driver.FindElement(By.XPath("(//*[contains(@id,'continue')])[1]")).Click();
+
+
 
 
         }
